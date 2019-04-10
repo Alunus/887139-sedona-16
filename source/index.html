@@ -8,84 +8,101 @@
 
 <body>
 
-  <section class="header">
-    <nav>
-      <ul class="header-navigation">
-        <li class="header-navigation-item">Главная</li>
-        <li class="header-navigation-item">Фото и фидео</li>
-        <li class="header-navigation-item">Форма отзыва</li>
-        <li class="header-navigation-item">Html Academy</li>
-      </ul>
-    </nav>
-  </section>
-  <section class="intro">
-    <div>
-      <p>Welcome</p>
-      <p>to the gorgeus</p>
-    </div>
-    <h1>Sedona</h1>
-    <p>Becouse the Grand Canyon sucks!</p>
-  </section>
-  <section class="features">
-    <h2 class="features-headline">Седона - небольшой городок в Аризоне,заслуживающий большего!</h2>
-    <p class="features-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-    <ul class="features-list">
-      <li class="features-list-item">
-        <h3 class="features-list-item-headline">Настоящий городок</h3>
-        <span class="features-list-item-number">№1</span>
-        <p class="features-list-item-description">Седона не аттракцион для туристов, там течет своя жизнь</p>
-        <img src="img/sedona-restaurant" width="150" height="150" alt="Ресторан Седоны">
-        <ul class="features-list-item-list">
-          <li class="features-list-item-list-item">
-            <h4 class="features-list-item-list-item-headline">Жилье</h4>
-            <p class="features-list-item-list-item-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </li>
-          <li class="features-list-item-list-item">
-            <h4 class="features-list-item-list-item-headline">Сувениры</h4>
-            <p class="features-list-item-list-item-description">Не только китайского, но и местного производства!</p>
-          </li>
-          <li class="features-list-item-list-item">
-            <h4 class="features-list-item-list-item-headline">Еда</h4>
-            <p class="features-list-item-list-item-description">Всегда заказывайте фирменный бургер, вы не
-              разочаруетесь!</p>
-          </li>
+  <header class="page-header">
+    <nav class="header-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="header-nav__wrapper">
+        <ul class="header-nav__list site-list">
+          <li class="site-list__item"><a class="site-list__link site-list__link_currenent">Главная</a></li>
+          <li class="site-list__item"><a class="site-list__link">Фото и фидео</a></li>
+          <li class="site-list__item"><a class="site-list__link">Форма отзыва</a></li>
+          <li class="site-list__item"><a class="site-list__link">Html Academy</a></li>
         </ul>
-      </li>
-      <li class="features-list-item">
-        <h3 class="features-list-item-headline">Там есть мост дьявола</h3>
-        <span class="features-list-item-number">№2</span>
-        <p class="features-list-item-headline"></p>>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-        <img src="img/devils-bridge" width="150" height="150" alt="Мост дьявола">
-      </li>
-      <li class="features-list-item">
-        <h3 class="features-list-item-headline"></h3>>Небольшая площадь</h3>
-        <span class="features-list-item-number">№3</span>
-        <p class="features-list-item-description"></p>>Все интересные места находятся очень близко</p>
-      </li>
-      <li class="features-list-item">
-        <h3 class="features-list-item-headline"></h3>>Красивая дорога</h3>
-        <span class="features-list-item-number">№4</span>
-        <p class="features-list-item-description"></p>>Ехать в Седону из Лас-вегаса совсем не скучно!</p>
-      </li>
-      <li class="features-list-item">
-        <h3 class="features-list-item-headline"></h3>>Мало туристов</h3>
-        <span class="features-list-item-number">№5</span>
-        <p class="features-list-item-description"></p>>Большинство едет в Гранд Каньон и толпится там</p>
-      </li>
-    </ul>
-  </section>
-  <section class="footer">
-    <h2 class="footer-tag">#visitsedona</h2>
-    <ul class="footer-social">
-      <li class="footer-social-item"><a>Twitter</a></li>
-      <li class="footer-social-item"></li>><a>Facebook</a></li>
-      <li class="footer-social-item"></li>><a>Youtube</a></li>
-    </ul>
-    <div class="footer-develop"></div>>
-    <p class="footer-develop-text">Разработано</p>
-    <a class="footer-develop-academy">Html Academy</a>
+      </div>
+    </nav>
+    <a class="header__logo">
+      <img class="header__logo-image" src="img/sedona-logo" width="150" height="150" alt="Лого Седоны">
+    </a>
+    <div class="header-intro">
+      <img class="header-intro__img" src="img/sedona-intro" width="150" height="150" alt="Слоган Седоны">
     </div>
-  </section>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Седона</h1>
+    <header class="main-header">
+      <p class="main-header__headline">Седона - небольшой городок в Аризоне,заслуживающий большего!</p>
+      <p class="main-header__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    </header>
+    <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+      <ul class="features feature-list">
+        <li class="feature__item">
+          <h3 class="feature__headline">Настоящий городок</h3>
+          <span class="feature__number">№1</span>
+          <p class="feature__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <div class="feature_wrapper">
+            <img src="img/sedona-restaurant" width="150" height="150" alt="Ресторан Седоны">
+          </div>
+          <ul class="feature features-list">
+            <li class="features__item">
+              <h4 class="features__headline">Жилье</h4>
+              <p class="features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="features__item">
+              <h4 class="features__headline">Сувениры</h4>
+              <p class="features__description">Не только китайского, но и местного производства!</p>
+            </li>
+            <li class="features__item">
+              <h4 class="features__headline">Еда</h4>
+              <p class="features__description">Всегда заказывайте фирменный бургер, вы не
+                разочаруетесь!</p>
+            </li>
+          </ul>
+        </li>
+        <li class="feature__item">
+          <h3 class="feature__headline">Там есть мост дьявола</h3>
+          <span class="feature__number">№2</span>
+          <p class="feature__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <div class="feature_wrapper">
+            <img src="img/devils-bridge" width="150" height="150" alt="Мост дьявола">
+          </div>
+        </li>
+        <li class="feature__item">
+          <h3 class="feature__headline">>Небольшая площадь</h3>
+          <span class="feature__number">№3</span>
+          <p class="feature__description">Все интересные места находятся очень близко</p>
+        </li>
+        <li class="feature__item">
+          <h3 class="feature__headline">Красивая дорога</h3>
+          <span class="feature__number">№4</span>
+          <p class="feature__description">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+        </li>
+        <li class="feature__item">
+          <h3 class="feature__headline">Мало туристов</h3>
+          <span class="feature__number">№5</span>
+          <p class="feature__description">Большинство едет в Гранд Каньон и толпится там</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <p class="page-footer__tag">#visitsedona</p>
+    <ul class="footer-social">
+      <li class="footer-social__item"><a class="footer-social__link footer-social__link_twitter"><span
+            class="visually-hidden">Twitter</span></a></li>
+      <li class="footer-social__item"><a class="footer-social__link footer-social__link_facebook"><span
+            class="visually-hidden">Facebook</span></a></li>
+      <li class="footer-social__item"><a class="footer-social__link footer-social__link_youtube"><span
+            class="visually-hidden">Youtube</span></a></li>
+    </ul>
+    <div class="page-footer__copyright">
+      <span class="page-footer__text">Разработано</span>
+      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTMLAcademy</span>
+        <img src="img/HTMLAcademy" width="150" height="150" alt="HTML Academy">
+      </a>
+    </div>
+  </footer>
 </body>
 
 </html>

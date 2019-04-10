@@ -8,32 +8,47 @@
 
 <body>
 
-  <section class="header">
-    <nav>
-      <ul class="header-navigation">
-        <li class="header-navigation-item">Главная</li>
-        <li class="header-navigation-item">Фото и фидео</li>
-        <li class="header-navigation-item">Форма отзыва</li>
-        <li class="header-navigation-item">Html Academy</li>
-      </ul>
-    </nav>
-  </section>
-  <section class="logo">
-    <h1>Sedona</h1>
-  </section>
+    <header class="page-header">
+        <nav class="header-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="header-nav__wrapper">
+            <ul class="header-nav__list site-list">
+              <li class="site-list__item"><a class="site-list__link">Главная</a></li>
+              <li class="site-list__item"><a class="site-list__link site-list__link_currenent">Фото и фидео</a></li>
+              <li class="site-list__item"><a class="site-list__link">Форма отзыва</a></li>
+              <li class="site-list__item"><a class="site-list__link">Html Academy</a></li>
+            </ul>
+          </div>
+        </nav>
+        <a class="header__logo">
+          <img class="header__logo-image" src="img/sedona-logo" width="150" height="150" alt="Лого Седоны">
+        </a>
+      <div class="page-logo">
+          <h1 class="visually-hidden">Седона</h1>
+          <img class= "page-logo__img"src="img/page-logo.jpeg" width="150" height="150" alt="Седона лого">
+      </div>
+      </header>
+<main class="page-main">
 
-  <section class="footer">
-    <h2 class="footer-tag">#visitsedona</h2>
-    <ul class="footer-social">
-      <li class="footer-social-item"><a>Twitter</a></li>
-      <li class="footer-social-item"></li>><a>Facebook</a></li>
-      <li class="footer-social-item"></li>><a>Youtube</a></li>
-    </ul>
-    <div  class="footer-develop"></div>>
-      <p class="footer-develop-text">Разработано</p>
-      <a class="footer-develop-academy">Html Academy</a>
-    </div>
-  </section>
+</main>
+        <footer class="page-footer">
+            <p class="page-footer__tag">#visitsedona</p>
+            <ul class="footer-social">
+              <li class="footer-social__item"><a class="footer-social__link footer-social__link_twitter"><span
+                    class="visually-hidden">Twitter</span></a></li>
+              <li class="footer-social__item"><a class="footer-social__link footer-social__link_facebook"><span
+                    class="visually-hidden">Facebook</span></a></li>
+              <li class="footer-social__item"><a class="footer-social__link footer-social__link_youtube"><span
+                    class="visually-hidden">Youtube</span></a></li>
+            </ul>
+            <div class="page-footer__copyright">
+              <span class="page-footer__text">Разработано</span>
+              <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+                <span class="visually-hidden">HTMLAcademy</span>
+                <img src="img/HTMLAcademy" width="150" height="150" alt="HTML Academy">
+              </a>
+            </div>
+          </footer>
 </body>
 
 </html>
