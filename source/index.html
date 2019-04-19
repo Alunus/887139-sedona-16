@@ -4,27 +4,29 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="page-header">
     <nav class="header-nav">
-      <button class="header-nav__toggle" type="button">Открыть меню</button>
       <div class="header-nav__wrapper">
         <ul class="header-nav__list site-list">
-          <li class="site-list__item"><a class="site-list__link site-list__link--currenent">Главная</a></li>
-          <li class="site-list__item"><a class="site-list__link">Фото и фидео</a></li>
-          <li class="site-list__item"><a class="site-list__link">Форма отзыва</a></li>
-          <li class="site-list__item"><a class="site-list__link">Html Academy</a></li>
+          <li class="site-list__item"><a href ="index.html" class="site-list__link site-list__link--currenent">Главная</a></li>
+          <li class="site-list__item"><a href ="photo.html" class="site-list__link">Фото и видео</a></li>
+          <li class="site-list__item"><a href ="form.html" class="site-list__link">Форма отзыва</a></li>
+          <li class="site-list__item"><a href ="https://htmlacademy.ru/intensive/adaptive" class="site-list__link">Html Academy</a></li>
         </ul>
       </div>
+      <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </nav>
     <a class="header__logo">
-      <img class="header__logo-image" src="img/sedona-logo" width="150" height="150" alt="Лого Седоны">
+      <img class="header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Лого Седоны">
     </a>
-    <div class="header-intro">
-      <img class="header-intro__img" src="img/sedona-intro" width="150" height="150" alt="Слоган Седоны">
+    <div class="header-intro header-intro--index">
+      <img class="header-intro__bg" src="img/bg-back-mobile@1x.jpg" width="768" height="389" alt="Слоган Седоны">
     </div>
   </header>
   <main class="page-main">
@@ -36,11 +38,11 @@
     <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
       <ol class="features__list">
-        <li class="features__item">
+        <li class="features__item features__item--1">
           <h3 class="features__headline">Настоящий городок</h3>
           <p class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           <div class="features__wrapper">
-            <img src="img/sedona-restaurant" width="150" height="150" alt="Ресторан Седоны">
+            <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Город Седона">
           </div>
           <ul class="features__inner-aspects aspects">
             <li class="aspects__item aspects__item--house">
@@ -58,22 +60,24 @@
             </li>
           </ul>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--2">
           <h3 class="features__headline">Там есть мост дьявола</h3>
           <p class="features__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           <div class="features_wrapper">
-            <img src="img/devils-bridge" width="150" height="150" alt="Мост дьявола">
+            <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
           </div>
         </li>
-        <li class="features__item">
-          <h3 class="features__headline">>Небольшая площадь</h3>
+        <li class="features__item features__item--3">
+          <h3 class="features__headline">Небольшая площадь</h3>
           <p class="features__description">Все интересные места находятся очень близко</p>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--4">
+            <li class="features__item ">
           <h3 class="features__headline">Красивая дорога</h3>
           <p class="features__description">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--5">
+            <li class="features__item ">
           <h3 class="features__headline">Мало туристов</h3>
           <p class="features__description">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
@@ -103,7 +107,7 @@
       <span class="page-footer__text">Разработано</span>
       <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">HTMLAcademy</span>
-        <img src="img/HTMLAcademy" width="150" height="150" alt="HTML Academy">
+        <img src="img/logo-htmlacademy.svg" width="26" height="34" alt="HTML Academy">
       </a>
     </div>
   </footer>

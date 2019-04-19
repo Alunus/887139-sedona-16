@@ -1,0 +1,36 @@
+.site-list {
+  padding: 0;
+}
+.site-list__item {
+  list-style: none;
+  padding-top:7px;
+  padding-bottom: 7px;
+  background-color:#81b3d2;
+}
+.site-list__link {
+  .fonts-settings();
+  padding:0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header-intro--index {
+  position: relative;
+  &::before{
+  position: absolute;
+  content: '';
+  width:460px;
+  height: 350px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-image: url(../../img/text-sedona-index.svg);
+  }
+}
+.header-nav__toggle {
+display:block;
+width:23px;
+height:22px;
+background-color: white;
+border:none;
+background-image:  url(../../img/icon-menu.svg);
+}
