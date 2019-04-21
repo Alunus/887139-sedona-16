@@ -1,70 +1,88 @@
 .features__list {
-  padding:0px;
+  padding: 0;
   list-style: none;
 }
-.features__item--1, .features__item--2{
-  background-color:#81b3d2;
+
+.features__item--blue-bg {
+  background-color: @primary-color;
 }
+
 .features__headline {
   text-transform: uppercase;
-  .fonts-settings (@size:18px,@height:26px,@weight:700,@color:#000000);
+  .fonts-settings
+    (@size: @font-size-md, @height:26px, @weight:700, @color: @black);
 }
+
 .features__description {
   text-transform: uppercase;
-  .fonts-settings (@size:14px,@height:21px,@weight:400,@color:#000000)
+  .fonts-settings
+    (@size: @font-size-sm, @height:21px, @weight:400, @color: @black);
 }
-.features__item--1 .features__headline, .features__item--2 .features__headline {
-  color: #ffffff;
+
+.features__headline--color-white {
+  color: @white;
 }
-.features__item--1 .features__description, .features__item--2 .features__description  {
-  color: #ffffff;
+
+.features__description--color-white {
+  color: @white;
 }
+
 .aspects {
-  background-color:#ffffff;
+  background-color: @white;
   list-style: none;
   padding: 0;
 }
-.aspects__headline{
+
+.aspects__headline {
   text-transform: uppercase;
-  .fonts-settings (@size:18px,@height:26px,@weight:700,@color:#000000)
+  .fonts-settings
+    (@size: @font-size-md, @height:26px, @weight:700, @color: @black);
 }
-.aspects__description{
+
+.aspects__description {
   text-transform: uppercase;
-  .fonts-settings (@size:14px,@height:21px,@weight:400,@color:#000000)
+  .fonts-settings
+    (@size: @font-size-sm, @height:21px, @weight:400, @color: @black);
 }
+
 .aspects__item--house {
   position: relative;
-  &::before{
-  position: absolute;
-  content: '';
-  width:74px;
-  height: 72px;
-  top: 0;
-  left: 0;
-  background-image: url(../../img/icon-house.svg);
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 74px;
+    height: 72px;
+    top: 0;
+    left: 0;
+    background-image: url("../../img/icon-house.svg");
   }
- }
-.aspects__item--souvenir{
+}
+
+.aspects__item--souvenir {
   position: relative;
-  &::before{
-  position: absolute;
-  content: '';
-  width:63px;
-  height: 75px;
-  top: 0;
-  left: 0;
-  background-image: url(../../img/icon-gift.svg);
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 63px;
+    height: 75px;
+    top: 0;
+    left: 0;
+    background-image: url("../../img/icon-gift.svg");
   }
- }
+}
+
 .aspects__item--food {
   position: relative;
-  &::before{
-  position: absolute;
-  content: '';
-  width:76px;
-  height: 69px;
-  top: 0;
-  left: 0;
-  background-image: url(../../img/icon-burger.svg);
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 76px;
+    height: 69px;
+    top: 0;
+    left: 0;
+    background-image: url("../../img/icon-burger.svg");
   }
- }
+}

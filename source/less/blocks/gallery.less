@@ -1,20 +1,22 @@
 .post {
-  padding:0;
+  padding: 0;
   list-style: none;
 }
 
 .post__headline {
-  .fonts-settings (@size:14px,@height:24px,@weight:700,@color:#000000);
-  text-transform:uppercase;
+  .fonts-settings (@size: @font-size-sm, @height:24px, @weight:700, @color:#000000);
+  text-transform: uppercase;
 }
+
 .post__autor {
-  .fonts-settings (@size:14px,@height:24px,@weight:400,@color:#000000);
+  .fonts-settings (@size: @font-size-sm, @height:24px, @weight:400, @color:#000000);
 }
+
 .post__lukas {
-display:block;
-width:23px;
-height:22px;
-background-color: white;
-border:none;
-background-image:  url(../../img/icon-like.svg);
+  display: block;
+  width: 23px;
+  height: 22px;
+  background-color: white;
+  border: none;
+  background-image: url("../../img/icon-like.svg");
 }
